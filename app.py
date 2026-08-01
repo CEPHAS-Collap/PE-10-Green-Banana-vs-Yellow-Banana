@@ -44,3 +44,44 @@ def predict(image):
     return label, confidence
 
 
+# ------------------------------------
+# Streamlit UI
+# ------------------------------------
+st.set_page_config(
+    page_title="Banana Ripeness Classifier",
+    page_icon="🍌",
+    layout="centered",
+)
+
+st.title(" Banana Ripeness Classifier")
+
+st.write(
+    """
+Upload an image of a banana and the model will predict whether it is:
+
+-  Green (Unripe)
+-  Yellow (Ripe)
+"""
+)
+
+uploaded_file = st.file_uploader(
+    "Choose a banana image",
+    type=["jpg", "jpeg", "png", "webp"],
+)
+
+if uploaded_file is not None:
+
+    image = Image.open(uploaded_file)
+
+    st.image(image, caption="Uploaded Image", use_container_width=True)
+
+    if st.button("Predict"):
+
+        with st.spinner("Predicting..."):
+
+            label, confidence = predict(image)
+
+        st.success(f"Prediction: **{label}**")
+        st.metric("Confidence", f"{confidence*100:.2f}%")
+
+        st.progress(float(confidence))
