@@ -1,4 +1,18 @@
-# PE-10-Green-Banana-vs-Yellow-Banana
+# PE-10-Green-Banana-vs-Yellow-Banana 
+
+## Contributors:
+## 23/EG/PE/029
+## 22/EG/PE/1559
+## 22/EG/PE/1499
+## 22/EG/PE/1519
+## 23/EG/PE/019
+## 22/EG/PE/1539
+## 22/EG/PE/1549
+## 23/EG/PE/009
+## 22/EG/PE/1489
+## 22/EG/PE/1479
+## 22/EG/PE/1529
+
 
 
 # 🍌 Green vs Yellow Banana Classifier
