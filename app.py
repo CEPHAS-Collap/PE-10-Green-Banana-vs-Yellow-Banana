@@ -6,7 +6,7 @@ from PIL import Image
 # ------------------------------------
 # Configuration
 # ------------------------------------
-MODEL_PATH = "best_model_final.keras"   
+MODEL_PATH = "model/best_model_final.keras"   
 IMG_SIZE = (224, 224)
 
 # ------------------------------------
