@@ -91,3 +91,83 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+---
+
+## ▶ Run the Application
+
+Start the Streamlit app with:
+
+```bash
+streamlit run app.py
+```
+
+The application will open automatically in your browser.
+
+---
+
+##  Model
+
+The classifier uses **MobileNetV2** with transfer learning.
+
+### Input
+
+* Image size: **224 × 224**
+* RGB images
+
+### Output
+
+*  Green (Unripe)
+*  Yellow (Ripe)
+
+---
+
+##  How to Use
+
+1. Launch the Streamlit app.
+2. Upload a banana image (`.jpg`, `.jpeg`, `.png`, or `.webp`).
+3. Click **Predict**.
+4. View the predicted class and confidence score.
+
+---
+
+## Future Improvements
+
+* Support multiple ripeness stages
+* Improve model accuracy with more training data
+* Deploy online using Streamlit Community Cloud
+* Add Grad-CAM visualizations for explainability
+* Enable real-time webcam predictions
+
+---
+
+## Requirements
+
+Example `requirements.txt`:
+
+```text
+streamlit
+tensorflow
+numpy
+Pillow
+matplotlib
+```
+
+---
+
+##  Contributing
+
+Contributions are welcome.
+
+1. Fork the repository.
+2. Create a new feature branch.
+3. Commit your changes.
+4. Push to your branch.
+5. Open a Pull Request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. Feel free to use, modify, and distribute it for educational and commercial purposes.
+
+---
